@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -43,7 +43,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:backspace$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
   - $$mdi:backspace-reverse-outline$$
   NUM:
   - '1'
@@ -188,9 +188,9 @@ layers:
   - PgDn
   - '6'
   - '7'
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '&new_macro'
+  - '&ki'
+  - '&ko'
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '`', s: '~'}
