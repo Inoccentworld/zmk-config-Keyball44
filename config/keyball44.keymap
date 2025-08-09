@@ -50,16 +50,39 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp U>;
+            label = "NEW_MACRO";
+        };
+
+        ki: ki {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I>;
+            label = "KI";
+        };
+
+        ko: ko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp O>;
+            label = "KO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE      &kp Q     &kp W        &kp E               &kp R    &kp T                       &kp Y            &kp U    &kp I      &kp O    &kp P      &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A     &kp S        &kp D               &kp F    &kp G                       &kp H            &lt 5 J  &lt 4 K    &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X        &kp C               &kp V    &lt 3 B                     &kp N            &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT  &lt 1 SPACE  &mt LCTRL CAPSLOCK  &kp TAB               &kp BACKSPACE  &lt 2 BACKSPACE                                          &kp DELETE
+&kp ESCAPE      &kp Q     &kp W        &kp E               &kp R    &kp T                       &kp Y      &kp U    &kp I      &kp O    &kp P      &kp MINUS
+&kp LEFT_SHIFT  &kp A     &kp S        &kp D               &kp F    &kp G                       &kp H      &lt 5 J  &lt 4 K    &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z     &kp X        &kp C               &kp V    &lt 3 B                     &kp N      &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+&kp LGUI        &kp LALT  &lt 1 SPACE  &mt LCTRL CAPSLOCK  &kp TAB               &kp BACKSPACE  &lt 2 RET                                          &kp DELETE
             >;
         };
 
@@ -96,10 +119,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &kp NUMBER_6              &kp NUMBER_7  &kp N8     &kp N9  &kp N0     &kp MINUS  &kp EQUAL
-&kp GRAVE     &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END                   &kp PAGE_UP   &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-&kp F1        &kp F2        &kp F3          &kp F4          &kp F5         &kp F6                    &kp F7        &kp F8     &kp F9  &kp F10    &kp F11    &kp F12
-&trans        &trans        &trans          &trans          &trans                           &trans  &trans                                                 &none
+&kp NUMBER_1  &kp NUMBER_2  &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &kp NUMBER_6              &kp NUMBER_7  &new_macro  &ki     &ko        &kp MINUS  &kp EQUAL
+&kp GRAVE     &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END                   &kp PAGE_UP   &mkp LCLK   &none   &mkp RCLK  &mkp MCLK  &none
+&kp F1        &kp F2        &kp F3          &kp F4          &kp F5         &kp F6                    &kp F7        &kp F8      &kp F9  &kp F10    &kp F11    &kp F12
+&trans        &trans        &trans          &trans          &trans                           &trans  &trans                                                  &none
             >;
         };
 
