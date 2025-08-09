@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - Z
   - X
   - C
