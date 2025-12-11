@@ -119,18 +119,18 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &none     &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &none                &none   &new_macro  &kp UP_ARROW  &ko        &none      &none
-&none   &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END              &none   &kp LEFT    &kp DOWN      &kp RIGHT  &none      &none
-&none   &none     &none           &none           &none          &none                &none   &mkp LCLK   &none         &mkp RCLK  &mkp MCLK  &none
-&trans  &trans    &trans          &trans          &trans                      &trans  &trans                                                  &none
+&none   &none     &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &none                &none   &new_macro      &kp UP_ARROW    &ko              &none      &none
+&none   &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END              &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none
+&none   &none     &none           &none           &none          &none                &none   &mkp LCLK       &none           &mkp RCLK        &mkp MCLK  &none
+&trans  &trans    &trans          &trans          &trans                      &trans  &trans                                                              &none
             >;
         };
 
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans              &trans  &trans          &kp UP          &trans           &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans              &trans  &kp LEFT        &kp DOWN        &kp RIGHT        &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans              &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans              &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans              &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans   &trans   &trans               &trans  &trans                                                           &trans
             >;
